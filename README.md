@@ -13,7 +13,7 @@
 </p>
 
 <samp>
-  <a href="mailto:chominkyu3290@gmail.com">Research contact</a>
+  <a href="mailto:chominkyu3290@gmail.com">Contact</a>
   &nbsp;·&nbsp;
   <a href="https://github.com/danielcho02/pwnable_lab">pwnable_lab</a>
   &nbsp;·&nbsp;
