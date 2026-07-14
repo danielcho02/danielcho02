@@ -4,7 +4,7 @@
 
 <p align="center">
   <strong>Kyung Hee University · Computer Science & Engineering (2022)</strong><br />
-  WhiteHat School · Seoul, Korea
+  WhiteHat School 4th · Seoul, Korea
 </p>
 
 <p align="center">
