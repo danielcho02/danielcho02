@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/header.svg" width="100%" alt="Daniel Cho — security engineering, systems, and trustworthy software" />
+  <img src="./assets/header.svg" width="100%" alt="Security research workflow from untrusted input to verified evidence" />
 </p>
 
 <p align="center">

@@ -1,36 +1,46 @@
-<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Daniel Cho — Security Engineering</title>
-  <desc id="desc">A dark blue technical banner introducing Daniel Cho and his interests in systems security, reverse engineering, network security, and secure software.</desc>
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" xml:lang="en" role="img" aria-labelledby="title desc">
+  <title id="title">Security, from behavior to evidence</title>
+  <desc id="desc">A research-note style trust-boundary map showing untrusted input moving through observation, failure and control comparison, and verified evidence.</desc>
 
   <defs>
-    <linearGradient id="background" x1="48" y1="20" x2="1150" y2="340" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#07111F" />
-      <stop offset="0.55" stop-color="#0A1728" />
-      <stop offset="1" stop-color="#071520" />
+    <linearGradient id="background" x1="28" y1="20" x2="1174" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070B12" />
+      <stop offset="0.52" stop-color="#0A1320" />
+      <stop offset="1" stop-color="#091A1B" />
     </linearGradient>
-    <linearGradient id="accent" x1="80" y1="0" x2="640" y2="0" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#58A6FF" />
-      <stop offset="0.5" stop-color="#22D3EE" />
-      <stop offset="1" stop-color="#34D399" />
+    <linearGradient id="edge" x1="20" y1="20" x2="1175" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#365071" />
+      <stop offset="0.55" stop-color="#243C54" />
+      <stop offset="1" stop-color="#31594F" />
     </linearGradient>
-    <linearGradient id="panel" x1="805" y1="70" x2="1120" y2="292" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0F243A" stop-opacity="0.94" />
-      <stop offset="1" stop-color="#091725" stop-opacity="0.96" />
+    <linearGradient id="flow" x1="610" y1="0" x2="1148" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6C177" />
+      <stop offset="0.34" stop-color="#67E8F9" />
+      <stop offset="1" stop-color="#6EE7B7" />
     </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(925 95) rotate(126) scale(260 330)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#22D3EE" stop-opacity="0.18" />
-      <stop offset="1" stop-color="#22D3EE" stop-opacity="0" />
+    <radialGradient id="leftGlow" cx="0" cy="0" r="1" gradientTransform="translate(232 164) rotate(23) scale(410 300)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D4E73" stop-opacity="0.2" />
+      <stop offset="1" stop-color="#1D4E73" stop-opacity="0" />
     </radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" stroke="#58A6FF" stroke-opacity="0.055" />
+    <radialGradient id="rightGlow" cx="0" cy="0" r="1" gradientTransform="translate(923 176) rotate(90) scale(230 390)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#174F48" stop-opacity="0.17" />
+      <stop offset="1" stop-color="#174F48" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#6B829A" stroke-opacity="0.045" />
     </pattern>
-    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="7" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
+    <pattern id="microgrid" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.55" fill="#7D91A8" fill-opacity="0.08" />
+    </pattern>
+    <marker id="arrowAmber" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L8 4L0 8Z" fill="#F6C177" />
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L8 4L0 8Z" fill="#67E8F9" />
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0L8 4L0 8Z" fill="#6EE7B7" />
+    </marker>
     <clipPath id="clip">
       <rect x="1" y="1" width="1198" height="358" rx="24" />
     </clipPath>
@@ -39,57 +49,99 @@
   <g clip-path="url(#clip)">
     <rect width="1200" height="360" fill="url(#background)" />
     <rect width="1200" height="360" fill="url(#grid)" />
-    <rect width="1200" height="360" fill="url(#glow)" />
+    <rect width="1200" height="360" fill="url(#microgrid)" />
+    <rect width="1200" height="360" fill="url(#leftGlow)" />
+    <rect width="1200" height="360" fill="url(#rightGlow)" />
 
-    <path d="M0 310C185 284 294 349 489 322C683 295 810 222 1200 266V360H0V310Z" fill="#0C2233" fill-opacity="0.62" />
-    <path d="M0 323C208 291 331 358 519 330C727 299 883 244 1200 279" stroke="url(#accent)" stroke-opacity="0.24" stroke-width="1.5" />
+    <path d="M0 321C166 292 335 342 502 316C705 285 870 238 1200 274V360H0V321Z" fill="#10202B" fill-opacity="0.44" />
+    <path d="M0 327C164 299 333 348 504 322C707 291 873 245 1200 281" stroke="#6EE7B7" stroke-opacity="0.14" stroke-width="1.2" />
 
-    <g opacity="0.34">
-      <path d="M45 76H220L258 114H484" stroke="#58A6FF" stroke-width="1" />
-      <path d="M77 281H298L327 252H517" stroke="#22D3EE" stroke-width="1" />
-      <circle cx="45" cy="76" r="3" fill="#58A6FF" />
-      <circle cx="258" cy="114" r="3" fill="#22D3EE" />
-      <circle cx="77" cy="281" r="3" fill="#22D3EE" />
-      <circle cx="327" cy="252" r="3" fill="#34D399" />
+    <g font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif">
+      <text x="64" y="62" fill="#88A6C2" font-size="11" font-weight="600" letter-spacing="2.2">SECURITY / SYSTEMS / RESEARCH NOTES</text>
+
+      <text x="62" y="133" fill="#D7E1EA" font-size="36" font-weight="600" letter-spacing="-0.8">security, from behavior</text>
+      <text x="62" y="181" fill="#F2F6F9" font-size="46" font-weight="700" letter-spacing="-1.4">to evidence.</text>
+
+      <rect x="64" y="205" width="286" height="2" rx="1" fill="url(#flow)" opacity="0.9" />
+      <text x="64" y="239" fill="#8CA2B7" font-family="Consolas, Menlo, monospace" font-size="13.5">trace the boundary  /  reproduce the failure</text>
+      <text x="64" y="263" fill="#8CA2B7" font-family="Consolas, Menlo, monospace" font-size="13.5">compare the behavior  /  verify the fix</text>
+
+      <g transform="translate(64 299)">
+        <rect width="146" height="28" rx="14" fill="#10251F" stroke="#6EE7B7" stroke-opacity="0.34" />
+        <circle cx="17" cy="14" r="4" fill="#6EE7B7" />
+        <text x="30" y="18" fill="#A8E9D2" font-size="10.5" font-weight="600" letter-spacing="1.35">OPEN TO RESEARCH</text>
+      </g>
+      <text x="230" y="317" fill="#536B81" font-family="Consolas, Menlo, monospace" font-size="11">@danielcho02 / SEOUL</text>
     </g>
 
-    <g transform="translate(74 67)">
-      <rect width="184" height="28" rx="14" fill="#10263D" stroke="#58A6FF" stroke-opacity="0.36" />
-      <circle cx="18" cy="14" r="4" fill="#34D399" filter="url(#softGlow)" />
-      <text x="32" y="18" fill="#9CCBFF" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="1.6">OPEN TO RESEARCH</text>
-    </g>
+    <g>
+      <text x="520" y="61" fill="#7D91A8" font-family="Consolas, Menlo, monospace" font-size="11" letter-spacing="1.4">TRUST BOUNDARY MAP</text>
+      <text x="1138" y="61" text-anchor="end" fill="#536B81" font-family="Consolas, Menlo, monospace" font-size="10">FIG. 01 / METHOD</text>
+      <path d="M520 76H1138" stroke="#30455C" stroke-width="1" />
 
-    <text x="72" y="164" fill="#F0F6FC" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="750" letter-spacing="-1.8">DANIEL CHO</text>
-    <rect x="74" y="184" width="552" height="3" rx="1.5" fill="url(#accent)" />
-    <text x="74" y="222" fill="#A8C7E6" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" letter-spacing="3.1">SECURITY · SYSTEMS · RELIABILITY</text>
-    <text x="74" y="259" fill="#6F91AD" font-family="Consolas, Menlo, monospace" font-size="14">build  /  break  /  explain  /  secure</text>
+      <rect x="655" y="91" width="34" height="198" rx="17" fill="#F6C177" fill-opacity="0.035" stroke="#F6C177" stroke-opacity="0.12" stroke-dasharray="4 6" />
+      <path d="M672 92V289" stroke="#F6C177" stroke-opacity="0.52" stroke-width="1" stroke-dasharray="3 6" />
+      <text x="672" y="84" text-anchor="middle" fill="#C7A56D" font-family="Consolas, Menlo, monospace" font-size="9.5" letter-spacing="1">BOUNDARY</text>
 
-    <g transform="translate(794 54)">
-      <rect width="338" height="250" rx="18" fill="url(#panel)" stroke="#58A6FF" stroke-opacity="0.28" />
-      <path d="M0 48H338" stroke="#58A6FF" stroke-opacity="0.18" />
-      <circle cx="22" cy="24" r="4" fill="#FF7B72" />
-      <circle cx="38" cy="24" r="4" fill="#D29922" />
-      <circle cx="54" cy="24" r="4" fill="#3FB950" />
-      <text x="168" y="29" text-anchor="middle" fill="#6888A3" font-family="Consolas, Menlo, monospace" font-size="11">research.focus</text>
+      <g transform="translate(520 155)">
+        <rect width="105" height="50" rx="9" fill="#251E18" stroke="#F6C177" stroke-opacity="0.62" />
+        <circle cx="15" cy="16" r="3.5" fill="#F6C177" />
+        <text x="27" y="19" fill="#C7A56D" font-family="Consolas, Menlo, monospace" font-size="9">INPUT</text>
+        <text x="14" y="38" fill="#F3D39A" font-family="Consolas, Menlo, monospace" font-size="11">UNTRUSTED</text>
+      </g>
+      <path d="M625 180H654" stroke="#F6C177" stroke-width="1.4" stroke-dasharray="4 4" marker-end="url(#arrowAmber)" />
+      <path d="M689 180H723" stroke="#67E8F9" stroke-width="1.4" marker-end="url(#arrowBlue)" />
 
-      <text x="24" y="82" fill="#34D399" font-family="Consolas, Menlo, monospace" font-size="13">$ inspect --trust-boundaries</text>
+      <circle cx="753" cy="180" r="25" fill="#0C222A" stroke="#67E8F9" stroke-opacity="0.68" />
+      <circle cx="753" cy="180" r="4" fill="#67E8F9" />
+      <circle cx="753" cy="180" r="13" stroke="#67E8F9" stroke-opacity="0.18" />
+      <text x="753" y="221" text-anchor="middle" fill="#9BB8C9" font-family="Consolas, Menlo, monospace" font-size="10">OBSERVE</text>
 
-      <g font-family="Consolas, Menlo, monospace" font-size="13">
-        <text x="24" y="118" fill="#52708B">01</text>
-        <text x="58" y="118" fill="#C9D1D9">systems_security</text>
-        <text x="24" y="148" fill="#52708B">02</text>
-        <text x="58" y="148" fill="#C9D1D9">reverse_engineering</text>
-        <text x="24" y="178" fill="#52708B">03</text>
-        <text x="58" y="178" fill="#C9D1D9">network_security</text>
-        <text x="24" y="208" fill="#52708B">04</text>
-        <text x="58" y="208" fill="#C9D1D9">secure_software</text>
+      <path d="M778 173C804 168 807 127 832 127" stroke="#F38BA8" stroke-opacity="0.72" stroke-width="1.3" />
+      <path d="M778 187C804 192 807 233 832 233" stroke="#67E8F9" stroke-opacity="0.72" stroke-width="1.3" />
+
+      <g transform="translate(832 105)">
+        <rect width="112" height="44" rx="8" fill="#241821" stroke="#F38BA8" stroke-opacity="0.55" />
+        <text x="56" y="19" text-anchor="middle" fill="#A87388" font-family="Consolas, Menlo, monospace" font-size="8.5" letter-spacing="1">REPRODUCE</text>
+        <text x="56" y="34" text-anchor="middle" fill="#F0A9BF" font-family="Consolas, Menlo, monospace" font-size="11">FAILURE</text>
       </g>
 
-      <rect x="24" y="228" width="198" height="2" rx="1" fill="url(#accent)" opacity="0.78" />
-      <rect x="229" y="228" width="18" height="2" rx="1" fill="#17334D" />
-      <rect x="254" y="228" width="10" height="2" rx="1" fill="#17334D" />
+      <g transform="translate(832 211)">
+        <rect width="112" height="44" rx="8" fill="#101F2C" stroke="#67E8F9" stroke-opacity="0.44" />
+        <text x="56" y="19" text-anchor="middle" fill="#678EA4" font-family="Consolas, Menlo, monospace" font-size="8.5" letter-spacing="1">BASELINE</text>
+        <text x="56" y="34" text-anchor="middle" fill="#9FDCE5" font-family="Consolas, Menlo, monospace" font-size="11">CONTROL</text>
+      </g>
+
+      <path d="M944 127C972 127 973 164 991 172" stroke="#F38BA8" stroke-opacity="0.64" stroke-width="1.3" />
+      <path d="M944 233C972 233 973 196 991 188" stroke="#67E8F9" stroke-opacity="0.64" stroke-width="1.3" />
+
+      <circle cx="1017" cy="180" r="26" fill="#102027" stroke="url(#flow)" stroke-width="1.3" />
+      <path d="M1006 180L1014 188L1029 171" stroke="#6EE7B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="1017" y="221" text-anchor="middle" fill="#9BB8C9" font-family="Consolas, Menlo, monospace" font-size="10">COMPARE</text>
+
+      <path d="M1043 180H1069" stroke="#6EE7B7" stroke-width="1.5" marker-end="url(#arrowGreen)" />
+      <g transform="translate(1073 155)">
+        <rect width="78" height="50" rx="9" fill="#10251F" stroke="#6EE7B7" stroke-opacity="0.65" />
+        <circle cx="39" cy="16" r="3.5" fill="#6EE7B7" />
+        <text x="39" y="36" text-anchor="middle" fill="#A8E9D2" font-family="Consolas, Menlo, monospace" font-size="10">EVIDENCE</text>
+      </g>
+
+      <g font-family="Consolas, Menlo, monospace" font-size="9.5" fill="#526A80">
+        <text x="520" y="286">UNTRUSTED ZONE</text>
+        <text x="705" y="286">MEASURE</text>
+        <text x="831" y="286">DIFFERENTIAL PATHS</text>
+        <text x="1046" y="286">VERIFIED</text>
+      </g>
+      <path d="M520 297H1138" stroke="#30455C" stroke-width="1" />
+      <g fill="#4F6980">
+        <circle cx="520" cy="297" r="2.5" />
+        <circle cx="672" cy="297" r="2.5" />
+        <circle cx="753" cy="297" r="2.5" />
+        <circle cx="1017" cy="297" r="2.5" />
+        <circle cx="1138" cy="297" r="2.5" />
+      </g>
     </g>
   </g>
 
-  <rect x="1" y="1" width="1198" height="358" rx="24" stroke="#58A6FF" stroke-opacity="0.22" stroke-width="2" />
+  <rect x="1" y="1" width="1198" height="358" rx="24" stroke="url(#edge)" stroke-opacity="0.8" stroke-width="2" />
 </svg>
