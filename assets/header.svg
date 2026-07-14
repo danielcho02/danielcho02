@@ -1,0 +1,95 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Daniel Cho — Security Engineering</title>
+  <desc id="desc">A dark blue technical banner introducing Daniel Cho and his interests in systems security, reverse engineering, network security, and secure software.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="48" y1="20" x2="1150" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F" />
+      <stop offset="0.55" stop-color="#0A1728" />
+      <stop offset="1" stop-color="#071520" />
+    </linearGradient>
+    <linearGradient id="accent" x1="80" y1="0" x2="640" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#58A6FF" />
+      <stop offset="0.5" stop-color="#22D3EE" />
+      <stop offset="1" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="panel" x1="805" y1="70" x2="1120" y2="292" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F243A" stop-opacity="0.94" />
+      <stop offset="1" stop-color="#091725" stop-opacity="0.96" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(925 95) rotate(126) scale(260 330)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#58A6FF" stroke-opacity="0.055" />
+    </pattern>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="clip">
+      <rect x="1" y="1" width="1198" height="358" rx="24" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="360" fill="url(#background)" />
+    <rect width="1200" height="360" fill="url(#grid)" />
+    <rect width="1200" height="360" fill="url(#glow)" />
+
+    <path d="M0 310C185 284 294 349 489 322C683 295 810 222 1200 266V360H0V310Z" fill="#0C2233" fill-opacity="0.62" />
+    <path d="M0 323C208 291 331 358 519 330C727 299 883 244 1200 279" stroke="url(#accent)" stroke-opacity="0.24" stroke-width="1.5" />
+
+    <g opacity="0.34">
+      <path d="M45 76H220L258 114H484" stroke="#58A6FF" stroke-width="1" />
+      <path d="M77 281H298L327 252H517" stroke="#22D3EE" stroke-width="1" />
+      <circle cx="45" cy="76" r="3" fill="#58A6FF" />
+      <circle cx="258" cy="114" r="3" fill="#22D3EE" />
+      <circle cx="77" cy="281" r="3" fill="#22D3EE" />
+      <circle cx="327" cy="252" r="3" fill="#34D399" />
+    </g>
+
+    <g transform="translate(74 67)">
+      <rect width="184" height="28" rx="14" fill="#10263D" stroke="#58A6FF" stroke-opacity="0.36" />
+      <circle cx="18" cy="14" r="4" fill="#34D399" filter="url(#softGlow)" />
+      <text x="32" y="18" fill="#9CCBFF" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="1.6">OPEN TO RESEARCH</text>
+    </g>
+
+    <text x="72" y="164" fill="#F0F6FC" font-family="Segoe UI, Arial, sans-serif" font-size="64" font-weight="750" letter-spacing="-1.8">DANIEL CHO</text>
+    <rect x="74" y="184" width="552" height="3" rx="1.5" fill="url(#accent)" />
+    <text x="74" y="222" fill="#A8C7E6" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" letter-spacing="3.1">SECURITY · SYSTEMS · RELIABILITY</text>
+    <text x="74" y="259" fill="#6F91AD" font-family="Consolas, Menlo, monospace" font-size="14">build  /  break  /  explain  /  secure</text>
+
+    <g transform="translate(794 54)">
+      <rect width="338" height="250" rx="18" fill="url(#panel)" stroke="#58A6FF" stroke-opacity="0.28" />
+      <path d="M0 48H338" stroke="#58A6FF" stroke-opacity="0.18" />
+      <circle cx="22" cy="24" r="4" fill="#FF7B72" />
+      <circle cx="38" cy="24" r="4" fill="#D29922" />
+      <circle cx="54" cy="24" r="4" fill="#3FB950" />
+      <text x="168" y="29" text-anchor="middle" fill="#6888A3" font-family="Consolas, Menlo, monospace" font-size="11">research.focus</text>
+
+      <text x="24" y="82" fill="#34D399" font-family="Consolas, Menlo, monospace" font-size="13">$ inspect --trust-boundaries</text>
+
+      <g font-family="Consolas, Menlo, monospace" font-size="13">
+        <text x="24" y="118" fill="#52708B">01</text>
+        <text x="58" y="118" fill="#C9D1D9">systems_security</text>
+        <text x="24" y="148" fill="#52708B">02</text>
+        <text x="58" y="148" fill="#C9D1D9">reverse_engineering</text>
+        <text x="24" y="178" fill="#52708B">03</text>
+        <text x="58" y="178" fill="#C9D1D9">network_security</text>
+        <text x="24" y="208" fill="#52708B">04</text>
+        <text x="58" y="208" fill="#C9D1D9">secure_software</text>
+      </g>
+
+      <rect x="24" y="228" width="198" height="2" rx="1" fill="url(#accent)" opacity="0.78" />
+      <rect x="229" y="228" width="18" height="2" rx="1" fill="#17334D" />
+      <rect x="254" y="228" width="10" height="2" rx="1" fill="#17334D" />
+    </g>
+  </g>
+
+  <rect x="1" y="1" width="1198" height="358" rx="24" stroke="#58A6FF" stroke-opacity="0.22" stroke-width="2" />
+</svg>
