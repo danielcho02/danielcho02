@@ -125,8 +125,8 @@ The latest `main` evidence records **381 unit tests** and **14 Docker integratio
 | Layer | Tools I use |
 | --- | --- |
 | **Languages** | C, C++, Python, TypeScript, Kotlin, PowerShell |
-| **Security study** | GDB/pwndbg, IDA, Frida, Wireshark, Burp Suite, pwntools |
-| **Systems** | Linux, Win32, Android, Docker, CMake, ADB |
+| **Security study** | GDB/pwndbg, IDA, pwntools |
+| **Systems** | Linux, Win32, Android, Docker, ADB |
 | **Research** | PyTorch, scikit-learn, OpenCV, Slurm |
 
 I am currently deepening my work in **binary exploitation**, **reverse engineering**, **firmware analysis**, and **reproducible vulnerability research**.
