@@ -1,23 +1,20 @@
 <h2 align="center">Daniel Cho · 조민규</h2>
 
 <p align="center">
-  <strong>Security Engineering · Systems · Vulnerability Research</strong><br />
-  Kyung Hee University · Computer Science & Engineering (2022)<br />
-  WhiteHat School 4th · Seoul, Korea
+  Security Engineering · Systems · Vulnerability Research<br />
+  <sub>Kyung Hee University CSE (2022) · WhiteHat School 4th · Seoul, Korea</sub>
 </p>
 
 <p align="center">
-  <code>C</code> <code>C++</code> <code>Python</code> <code>Kotlin</code><br />
-  <code>pwntools</code> <code>GDB / pwndbg</code> <code>IDA</code> <code>WinDbg</code> <code>Wireshark</code><br />
-  <code>Linux</code> <code>Docker</code> <code>CMake</code> <code>Win32</code>
+  <strong>Languages</strong> · C · C++ · Python<br />
+  <strong>Security</strong> · pwntools · GDB / pwndbg · IDA · WinDbg · Wireshark<br />
+  <strong>Systems</strong> · Linux · Docker · CMake
 </p>
 
 <p align="center">
-  <a href="mailto:chominkyu3290@gmail.com">Research contact</a>
+  <a href="mailto:chominkyu3290@gmail.com">Contact</a>
   ·
   <a href="https://github.com/danielcho02?tab=repositories">Repositories</a>
-  ·
-  <a href="https://github.com/danielcho02/phone2pad/releases">Releases</a>
 </p>
 
 ---
