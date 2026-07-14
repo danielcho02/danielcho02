@@ -1,10 +1,15 @@
+<h2 align="center">Daniel Cho · 조민규</h2>
+
 <p align="center">
-  <img src="./assets/header.svg" width="100%" alt="Security research workflow from untrusted input to verified evidence" />
+  <strong>Security Engineering · Systems · Vulnerability Research</strong><br />
+  Kyung Hee University · Computer Science & Engineering (2022)<br />
+  WhiteHat School 4th · Seoul, Korea
 </p>
 
 <p align="center">
-  <strong>Kyung Hee University · Computer Science & Engineering (2022)</strong><br />
-  WhiteHat School 4th · Seoul, Korea
+  <code>C</code> <code>C++</code> <code>Python</code> <code>Kotlin</code><br />
+  <code>pwntools</code> <code>GDB / pwndbg</code> <code>IDA</code> <code>WinDbg</code> <code>Wireshark</code><br />
+  <code>Linux</code> <code>Docker</code> <code>CMake</code> <code>Win32</code>
 </p>
 
 <p align="center">
