@@ -1,47 +1,31 @@
-<div align="center">
+<p align="center"><samp>SECURITY RESEARCH / SEOUL, KOREA</samp></p>
 
-<sub>SECURITY RESEARCH · SEOUL, KOREA</sub>
+<h1 align="center">Daniel Cho</h1>
 
-<h1>Daniel Cho</h1>
-
-<p><strong>조민규</strong></p>
-
-<p>
-  <strong>Binary Exploitation · Reverse Engineering · Systems Security</strong><br />
-  <sub>From vulnerable behavior to reproducible evidence.</sub><br />
+<p align="center">
+  <sub><strong>조민규</strong></sub><br />
   <sub>Kyung Hee University CSE (2022) · WhiteHat School 4th</sub>
 </p>
 
-<samp>
-  <a href="mailto:chominkyu3290@gmail.com">Contact</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/danielcho02/pwnable_lab">pwnable_lab</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/danielcho02?tab=repositories">Repositories</a>
-</samp>
-
-</div>
-
 <br />
 
-<table align="center" width="100%">
-<tr>
-<td align="center" width="33%">
-<sub><strong>01 / LANGUAGES</strong></sub><br /><br />
-<code>C</code>&nbsp;&nbsp; <code>C++</code>&nbsp;&nbsp; <code>Python</code>
-</td>
-<td align="center" width="34%">
-<sub><strong>02 / SECURITY</strong></sub><br /><br />
-<code>pwntools</code>&nbsp;&nbsp; <code>GDB</code>&nbsp;&nbsp; <code>pwndbg</code><br />
-<code>IDA</code>&nbsp;&nbsp; <code>WinDbg</code>
-</td>
-<td align="center" width="33%">
-<sub><strong>03 / SYSTEMS</strong></sub><br /><br />
-<code>Linux</code>&nbsp;&nbsp; <code>Docker</code><br />
-<code>Windows</code>&nbsp;&nbsp; <code>Kubernetes</code>
-</td>
-</tr>
-</table>
+```console
+daniel@lab:~$ stack --brief
+
+languages  C · C++ · Python
+analysis   pwntools · GDB · pwndbg
+           IDA · WinDbg
+systems    Linux · Docker
+           Windows · Kubernetes
+```
+
+<p align="center">
+  <sub>
+    <a href="mailto:chominkyu3290@gmail.com">Contact</a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/danielcho02?tab=repositories">Repositories</a>
+  </sub>
+</p>
 
 ---
 
