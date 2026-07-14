@@ -1,18 +1,27 @@
-<h2 align="center">Daniel Cho · 조민규</h2>
+<h1 align="center">Daniel Cho · 조민규</h1>
 
 <p align="center">
-  Security Engineering · Systems · Vulnerability Research<br />
+  <strong>Security Research · Binary Exploitation · Reverse Engineering</strong><br />
   <sub>Kyung Hee University CSE (2022) · WhiteHat School 4th · Seoul, Korea</sub>
 </p>
 
 <p align="center">
-  <strong>Languages</strong> · C · C++ · Python<br />
-  <strong>Security</strong> · pwntools · GDB / pwndbg · IDA · WinDbg · Wireshark<br />
-  <strong>Systems</strong> · Linux · Docker · CMake
+  <sub><strong>LANGUAGES</strong></sub><br />
+  <kbd>C</kbd> <kbd>C++</kbd> <kbd>Python</kbd> <kbd>Kotlin</kbd>
 </p>
 
 <p align="center">
-  <a href="mailto:chominkyu3290@gmail.com">Contact</a>
+  <sub><strong>SECURITY &amp; ANALYSIS</strong></sub><br />
+  <kbd>pwntools</kbd> <kbd>GDB</kbd> <kbd>pwndbg</kbd> <kbd>IDA</kbd> <kbd>AddressSanitizer</kbd> <kbd>libpcap</kbd>
+</p>
+
+<p align="center">
+  <sub><strong>SYSTEMS</strong></sub><br />
+  <kbd>Linux</kbd> <kbd>Docker</kbd> <kbd>Win32</kbd> <kbd>ADB</kbd>
+</p>
+
+<p align="center">
+  <a href="mailto:chominkyu3290@gmail.com">Research contact</a>
   ·
   <a href="https://github.com/danielcho02?tab=repositories">Repositories</a>
 </p>
