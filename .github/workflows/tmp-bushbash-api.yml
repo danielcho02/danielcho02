@@ -10,15 +10,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch public challenge metadata
+      - name: Fetch challenge detail
         run: |
           set -eu
-          curl -fsS -A 'Mozilla/5.0' -H 'Accept: application/json' 'https://bushbash.cssa.club/api/challenges' -o bushbash_challenges.json
-          cat bushbash_challenges.json
-      - name: Commit temporary output
+          for u in \
+            'https://bushbash.cssa.club/api/challenges/11' \
+            'https://bushbash.cssa.club/api/challenges/spiritual-interception' \
+            'https://bushbash.cssa.club/api/challenge/11'; do
+            code=$(curl -sS -L -A 'Mozilla/5.0' -H 'Accept: application/json' -o /tmp/out -w '%{http_code}' "$u")
+            echo "URL=$u STATUS=$code" >> bushbash_challenge11.txt
+            cat /tmp/out >> bushbash_challenge11.txt
+            echo >> bushbash_challenge11.txt
+          done
+          cat bushbash_challenge11.txt
+      - name: Commit output
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add bushbash_challenges.json
-          git commit -m 'chore: temporary BushBash API output'
+          git add bushbash_challenge11.txt
+          git commit -m 'chore: temporary challenge detail output'
           git push
