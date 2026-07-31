@@ -10,23 +10,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch challenge detail
+      - name: Fetch all challenge details
         run: |
           set -eu
-          for u in \
-            'https://bushbash.cssa.club/api/challenges/11' \
-            'https://bushbash.cssa.club/api/challenges/spiritual-interception' \
-            'https://bushbash.cssa.club/api/challenge/11'; do
-            code=$(curl -sS -L -A 'Mozilla/5.0' -H 'Accept: application/json' -o /tmp/out -w '%{http_code}' "$u")
-            echo "URL=$u STATUS=$code" >> bushbash_challenge11.txt
-            cat /tmp/out >> bushbash_challenge11.txt
-            echo >> bushbash_challenge11.txt
+          : > bushbash_details.txt
+          for i in $(seq 1 100); do
+            code=$(curl -sS -L -A 'Mozilla/5.0' -H 'Accept: application/json' -o /tmp/out -w '%{http_code}' "https://bushbash.cssa.club/api/challenges/$i")
+            if [ "$code" = 200 ]; then
+              printf 'ID=%s ' "$i" >> bushbash_details.txt
+              cat /tmp/out >> bushbash_details.txt
+              echo >> bushbash_details.txt
+            fi
           done
-          cat bushbash_challenge11.txt
+          grep -iE 'prayer|decrypt|dots|star' bushbash_details.txt || true
       - name: Commit output
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add bushbash_challenge11.txt
-          git commit -m 'chore: temporary challenge detail output'
+          git add bushbash_details.txt
+          git commit -m 'chore: temporary all challenge details'
           git push
