@@ -1,6 +1,0 @@
-URL=https://bushbash.cssa.club/api/challenges/11 STATUS=200
-{"data":{"id":11,"slug":"spiritual-interception","title":"Spiritual Interception","description":"We've received an odd transmission that appears to be largely made of noise. However, we think there may be more to this audio than meets the eye...\n\n**Author**: Vals","hidden":false,"visible_at":null,"updated_at":"2026-07-31T04:53:03.662Z","chained_after":null,"metadata":{"solve":{"input_type":"text"},"files":[{"filename":"transmission.wav","size":243476,"hash":"sha256:8c2eee5e8fac11e1801d946f8b551c7c418790ccf30ee14575368bdaaa6fd3d1","url":"files/local/nz4SQHWGSeuHCy3WekXjx?iat=1785495600&sig=L97X_U_NmyACmBz20ZFP_EKaWXeOo6ytS615_H3n79I","is_attachment":true}]}}}
-URL=https://bushbash.cssa.club/api/challenges/spiritual-interception STATUS=400
-{"error":"ValidationError","message":"id must be number"}
-URL=https://bushbash.cssa.club/api/challenge/11 STATUS=404
-{"message":"Route GET:/challenge/11 not found","error":"Not Found","statusCode":404}
