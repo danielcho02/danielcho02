@@ -4,7 +4,7 @@
 ```console
 kirin@pwnlab:~$ whoami
 
-school     Kyung Hee University, CSE
+school     Kyung Hee University, CSE             (2022.03 ~)
 now        Pwnlab @ KHU — undergraduate intern   (2026.08 ~)
            HacKHU — president                    (2026.09 ~)
            KISA WhiteHat School, 4th
