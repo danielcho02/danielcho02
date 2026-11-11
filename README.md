@@ -16,6 +16,10 @@ analysis   pwntools · GDB · pwndbg
            IDA · WinDbg
 systems    Linux · Docker · Windows
 
+kirin@pwnlab:~$ cve
+
+CVE-2026-110658  sofia-sip   heap out-of-bounds read   (finder)
+
 kirin@pwnlab:~$ interests
 
 binary exploitation · reverse engineering · vuln research
